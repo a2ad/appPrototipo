@@ -1,0 +1,96 @@
+/*  ==========================================================================
+    Layout
+    ========================================================================== */
+    body { 
+        background-color: #555;
+        overflow-x: hidden;
+        padding-top: 92px;
+        position: relative;
+    }
+
+    .content {
+        position: relative;
+        width: 100%;        
+    }
+
+    .page {
+        position: absolute;
+        width: 100%;
+        display: none;
+        //@include transform(translateX(-100%));
+        //@include transition(all .25s ease);
+    }
+
+    .page.space { padding: 10px 15px; }
+
+    .page.active { 
+        display: block;
+        //@include transform(translateX(0));
+    }
+
+    .page img {
+        margin-bottom: 15px;
+    }
+
+    /*  Lista
+        ========================================================================== */
+        .list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .list li {
+            border-top: solid 1px rgba(0,0,0, .2);
+            border-bottom: solid 1px rgba(255,255,255, .5);
+            background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(51%,#ededed), color-stop(100%,#ffffff));
+            background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+            background: -o-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+            background: -ms-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+            background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+        }
+
+        .list li a {
+            position: relative;
+            display: block;
+            font-size: 16px;
+            color: #333;
+            padding: 10px 30px 10px 10px;
+            font-weight: bold;
+            text-shadow: 0 1px 0 #FFF;
+        }
+
+        .list li a:hover {
+            background-color: #eee;
+            text-decoration: none;
+        }
+
+        .list li a:active {
+            background-color: $primary;
+            color: #fff;
+            text-shadow: 0 1px 0 #000;
+        }
+
+        .list li a i {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            right: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .page.space .list {
+            border-left: solid 1px rgba(0,0,0, .3);
+            border-right: solid 1px rgba(0,0,0, .3);
+            border-bottom: solid 1px rgba(0,0,0, .3);
+        }
+
+    /*  Mapa
+        ========================================================================== */
+        .map {
+            height: 300px;
+            width: 100%;
+        }

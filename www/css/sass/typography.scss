@@ -1,0 +1,51 @@
+/*  ==========================================================================
+    Tipografia
+    ========================================================================== */
+
+    body {
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust:none;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    /* Titulos
+      ========================================================================== */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #fff;
+        text-shadow: 0 1px 0 #333;
+      }
+
+    /* Textos
+      ========================================================================== */
+
+      p {
+         color: #fff;
+         text-shadow: 0 1px 0 #333;
+         font-size: 14px;
+         line-height: 20px;
+         margin: 0 0 15px;
+         text-align: left;
+      }
+
+    /* Listas
+      ========================================================================== */
+      ul,
+      dl {
+         color: #666;
+         font-size: 14px;
+      }
+
+    /* Links
+      ========================================================================== */
+      a { 
+         color: #FE7325;
+         text-decoration: none;
+      }
+
+      a:hover { text-decoration: underline; }
